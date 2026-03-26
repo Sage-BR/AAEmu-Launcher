@@ -138,6 +138,7 @@
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
             this.ttLocale = new System.Windows.Forms.ToolTip(this.components);
+            this.clearPatchCacheToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelLoginAndPatch.SuspendLayout();
             this.pPatchSteps.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pgbFrontTotal)).BeginInit();
@@ -596,7 +597,7 @@
             this.generateServerURILinkToolStripMenuItem,
             this.debugModeToolStripMenuItem});
             this.cmsAAEmuButton.Name = "cmsAAEmuButton";
-            this.cmsAAEmuButton.Size = new System.Drawing.Size(203, 98);
+            this.cmsAAEmuButton.Size = new System.Drawing.Size(203, 120);
             // 
             // troubleshootGameToolStripMenuItem
             // 
@@ -669,7 +670,8 @@
             // 
             this.troubleshootLauncherToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.forcePatchDownloadToolStripMenuItem,
-            this.skipPatchToolStripMenuItem});
+            this.skipPatchToolStripMenuItem,
+            this.clearPatchCacheToolStripMenuItem});
             this.troubleshootLauncherToolStripMenuItem.Name = "troubleshootLauncherToolStripMenuItem";
             this.troubleshootLauncherToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.troubleshootLauncherToolStripMenuItem.Text = "Troubleshoot Launcher";
@@ -905,19 +907,19 @@
             this.aAEmuLauncherToolStripMenuItem,
             this.aAEmuServerToolStripMenuItem});
             this.cmsGitHub.Name = "cmsGitHub";
-            this.cmsGitHub.Size = new System.Drawing.Size(167, 48);
+            this.cmsGitHub.Size = new System.Drawing.Size(166, 48);
             // 
             // aAEmuLauncherToolStripMenuItem
             // 
             this.aAEmuLauncherToolStripMenuItem.Name = "aAEmuLauncherToolStripMenuItem";
-            this.aAEmuLauncherToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.aAEmuLauncherToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.aAEmuLauncherToolStripMenuItem.Text = "AAEmu Launcher";
             this.aAEmuLauncherToolStripMenuItem.Click += new System.EventHandler(this.aAEmuLauncherToolStripMenuItem_Click);
             // 
             // aAEmuServerToolStripMenuItem
             // 
             this.aAEmuServerToolStripMenuItem.Name = "aAEmuServerToolStripMenuItem";
-            this.aAEmuServerToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.aAEmuServerToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.aAEmuServerToolStripMenuItem.Text = "AAEmu Server";
             this.aAEmuServerToolStripMenuItem.Click += new System.EventHandler(this.aAEmuServerToolStripMenuItem_Click);
             // 
@@ -1339,6 +1341,14 @@
             this.ttLocale.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.ttLocale.ToolTipTitle = "Game Locale Setting";
             // 
+            // clearPatchCacheToolStripMenuItem
+            // 
+            this.clearPatchCacheToolStripMenuItem.Name = "clearPatchCacheToolStripMenuItem";
+            this.clearPatchCacheToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.clearPatchCacheToolStripMenuItem.Text = "Clear Patch Cache";
+            this.clearPatchCacheToolStripMenuItem.Visible = false;
+            this.clearPatchCacheToolStripMenuItem.Click += new System.EventHandler(this.clearPatchCacheToolStripMenuItem_Click);
+            // 
             // LauncherForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1509,6 +1519,7 @@
         private System.Windows.Forms.ToolStripMenuItem miLocaleEnglishSignapore;
         private System.Windows.Forms.ToolStripSeparator miLocaleS3;
         private System.Windows.Forms.ToolStripMenuItem svenskaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clearPatchCacheToolStripMenuItem;
     }
 }
 
